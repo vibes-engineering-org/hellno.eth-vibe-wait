@@ -1,0 +1,59 @@
+
+> vibes-engineering-mini-app-template@0.1.0 build /__modal/volumes/vo-SaS8chWMm2m7l4o7HAIcy2
+> next build
+
+Attention: Next.js now collects completely anonymous telemetry regarding usage.
+This information is used to shape Next.js' roadmap and prioritize features.
+You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+https://nextjs.org/telemetry
+
+   ▲ Next.js 15.3.2
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully in 45s
+   Linting and checking validity of types ...
+
+./src/components/BucketExplorer.tsx
+106:9  Warning: The 'fetchNextPage' function makes the dependencies of useEffect Hook (at line 128) change on every render. Move it inside the useEffect callback. Alternatively, wrap the definition of 'fetchNextPage' in its own useCallback() Hook.  react-hooks/exhaustive-deps
+126:63  Warning: The ref value 'observerRef.current' will likely have changed by the time this effect cleanup function runs. If this ref points to a node rendered by React, copy 'observerRef.current' to a variable inside the effect, and use that variable in the cleanup function.  react-hooks/exhaustive-deps
+156:19  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/components/dropzone.tsx
+134:17  Warning: Using `<img>` could result in slower LCP and higher bandwidth. Consider using `<Image />` from `next/image` to automatically optimize images. This may incur additional usage or cost from your provider. See: https://nextjs.org/docs/messages/no-img-element  @next/next/no-img-element
+
+./src/hooks/use-supabase-upload.ts
+176:6  Warning: React Hook useEffect has a missing dependency: 'files'. Either include it or remove the dependency array.  react-hooks/exhaustive-deps
+
+info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/docs/app/api-reference/config/eslint#disabling-rules
+   Collecting page data ...
+[Upstash Redis] The 'url' property is missing or undefined in your Redis config.
+[Upstash Redis] The 'token' property is missing or undefined in your Redis config.
+   Generating static pages (0/12) ...
+[Upstash Redis] The 'url' property is missing or undefined in your Redis config.
+[Upstash Redis] The 'token' property is missing or undefined in your Redis config.
+   Generating static pages (3/12) 
+   Generating static pages (6/12) 
+   Generating static pages (9/12) 
+ ✓ Generating static pages (12/12)
+   Finalizing page optimization ...
+   Collecting build traces ...
+
+Route (app)                                 Size  First Load JS  Revalidate  Expire
+┌ ○ /                                     1.3 kB         104 kB          5m      1y
+├ ○ /_not-found                            981 B         103 kB
+├ ƒ /.well-known/farcaster.json            152 B         102 kB
+├ ƒ /api/get-jwt                           152 B         102 kB
+├ ƒ /api/send-notification                 152 B         102 kB
+├ ƒ /api/upload                            152 B         102 kB
+├ ƒ /api/webhook                           152 B         102 kB
+├ ○ /forward                             1.82 kB         132 kB
+└ ○ /opengraph-image                       152 B         102 kB
++ First Load JS shared by all             102 kB
+  ├ chunks/44584f8d-b0e315a9597d9deb.js  53.2 kB
+  ├ chunks/898-2c86332de5e1e88d.js       46.7 kB
+  └ other shared chunks (total)          2.35 kB
+
+
+○  (Static)   prerendered as static content
+ƒ  (Dynamic)  server-rendered on demand
+
