@@ -26,17 +26,17 @@ body {
 }
 @layer utilities {
   @keyframes blob {
-    0% { transform: translate(0px, 0px) scale(1); }
-    33% { transform: translate(10px, -20px) scale(1.05); }
-    66% { transform: translate(-10px, 10px) scale(0.95); }
-    100% { transform: translate(0px, 0px) scale(1); }
+    0% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
+    33% { transform: translate(5px, -10px) scale(1.02) rotate(-2deg); }
+    66% { transform: translate(-5px, 10px) scale(0.98) rotate(2deg); }
+    100% { transform: translate(0px, 0px) scale(1) rotate(0deg); }
   }
   @keyframes gradient-x {
     0%, 100% { background-size: 200% 200%; background-position: left center; }
     50% { background-size: 200% 200%; background-position: right center; }
   }
   .animate-blob {
-    animation: blob 12s ease-in-out infinite;
+    animation: blob 20s ease-in-out infinite;
   }
   .animate-gradient-x {
     background-size: 200% 200%;

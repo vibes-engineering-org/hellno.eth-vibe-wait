@@ -29,7 +29,7 @@ export default function MiniApp() {
         </div>
         <div className="mt-6 text-center">
           <DaimoPayTransferButton
-            className="px-4 py-2 font-bold text-white rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:from-purple-500 hover:to-cyan-500 transition-colors shadow-lg shadow-cyan-500/50 neon-border text-neon animate-flicker"
+            className="px-4 py-2 font-bold text-white rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 transition-colors shadow-md"
             toChainId={8453}
             tokenAddress="0x3F56e0C36d275367b8C502090eDf38289b3dEa0d"
             toAddress="0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
@@ -60,7 +60,7 @@ export default function MiniApp() {
       </div>
       <div className="mt-6 text-center">
         <DaimoPayTransferButton
-          className="px-4 py-2 font-bold text-white rounded-full bg-gradient-to-r from-cyan-500 via-blue-500 to-purple-500 hover:from-purple-500 hover:to-cyan-500 transition-colors shadow-lg shadow-cyan-500/50 neon-border text-neon animate-flicker"
+          className="px-4 py-2 font-bold text-white rounded-full bg-gradient-to-r from-cyan-500 to-purple-500 hover:from-cyan-600 hover:to-purple-600 transition-colors shadow-md"
           toChainId={8453}
           tokenAddress="0x3F56e0C36d275367b8C502090eDf38289b3dEa0d"
           toAddress="0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
