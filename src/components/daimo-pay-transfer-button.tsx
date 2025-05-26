@@ -14,6 +14,7 @@ export function DaimoPayTransferButton({
   amount,
   onPaymentStarted,
   onPaymentCompleted,
+  className,
 }: {
   text: string;
   toAddress: `0x${string}`;
@@ -22,6 +23,7 @@ export function DaimoPayTransferButton({
   toChainId?: number;
   onPaymentStarted?: () => void;
   onPaymentCompleted?: () => void;
+  className?: string;
 }) {
   return (
     <div className="flex justify-center text-xl font-bold rounded-lg shadow-lg">
@@ -42,7 +44,11 @@ export function DaimoPayTransferButton({
         closeOnSuccess
       >
         {({ show: showDaimoModal }) => (
-          <Button className="w-full" size="lg" onClick={() => showDaimoModal()}>
+          <Button
+            className={className ?? "w-full"}
+            size="lg"
+            onClick={() => showDaimoModal()}
+          >
             {text}
           </Button>
         )}

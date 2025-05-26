@@ -1,7 +1,7 @@
 "use client";
 
 import { useFrameSDK } from "~/hooks/useFrameSDK";
-import { TransferButton } from "./TransferButton";
+import { DaimoPayTransferButton } from "./daimo-pay-transfer-button";
 
 export default function MiniApp() {
   const { isSDKLoaded, isFramePinned, pinFrame } = useFrameSDK();
@@ -28,14 +28,14 @@ export default function MiniApp() {
           </p>
         </div>
         <div className="mt-6 text-center">
-          <TransferButton
+          <DaimoPayTransferButton
             className="px-4 py-2 font-bold text-white rounded-full bg-gradient-to-r from-green-400 via-teal-500 to-blue-500 hover:from-teal-500 hover:to-green-500 transition-transform transform hover:scale-105 shadow-lg shadow-green-500/50 animate-ping"
-            chainId={8453}
+            toChainId={8453}
             tokenAddress="0x3F56e0C36d275367b8C502090eDf38289b3dEa0d"
-            recipient="0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
-          >
-            Donate USDC
-          </TransferButton>
+            toAddress="0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
+            amount="1"
+            text="Donate USDC"
+          />
         </div>
       </div>
     );
@@ -59,14 +59,14 @@ export default function MiniApp() {
         </button>
       </div>
       <div className="mt-6 text-center">
-        <TransferButton
+        <DaimoPayTransferButton
           className="px-4 py-2 font-bold text-white rounded-full bg-gradient-to-r from-green-400 via-teal-500 to-blue-500 hover:from-teal-500 hover:to-green-500 transition-transform transform hover:scale-105 shadow-lg shadow-green-500/50 animate-ping"
-          chainId={8453}
+          toChainId={8453}
           tokenAddress="0x3F56e0C36d275367b8C502090eDf38289b3dEa0d"
-          recipient="0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
-        >
-          Donate USDC
-        </TransferButton>
+          toAddress="0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
+          amount="1"
+          text="Donate USDC"
+        />
       </div>
     </div>
   );
