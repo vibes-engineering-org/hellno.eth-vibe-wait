@@ -1,6 +1,7 @@
 "use client";
 
 import { useFrameSDK } from "~/hooks/useFrameSDK";
+import { TransferButton } from "./TransferButton";
 
 export default function MiniApp() {
   const { isSDKLoaded, isFramePinned, pinFrame } = useFrameSDK();
@@ -17,6 +18,15 @@ export default function MiniApp() {
         </div>
         <div className="mt-4 text-center">
           <p className="text-lg font-bold">🎉 You&apos;re on the waitlist!</p>
+        </div>
+        <div className="mt-6 text-center">
+          <TransferButton
+            chainId={8453}
+            tokenAddress="0x3F56e0C36d275367b8C502090eDf38289b3dEa0d"
+            recipient="0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
+          >
+            Donate USDC
+          </TransferButton>
         </div>
       </div>
     );
@@ -38,6 +48,15 @@ export default function MiniApp() {
         >
           Join Waitlist
         </button>
+      </div>
+      <div className="mt-6 text-center">
+        <TransferButton
+          chainId={8453}
+          tokenAddress="0x3F56e0C36d275367b8C502090eDf38289b3dEa0d"
+          recipient="0xd8dA6BF26964aF9D7eEd9e03E53415D37aA96045"
+        >
+          Donate USDC
+        </TransferButton>
       </div>
     </div>
   );

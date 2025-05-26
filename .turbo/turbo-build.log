@@ -2,15 +2,10 @@
 > vibes-engineering-mini-app-template@0.1.0 build /__modal/volumes/vo-SaS8chWMm2m7l4o7HAIcy2
 > next build
 
-Attention: Next.js now collects completely anonymous telemetry regarding usage.
-This information is used to shape Next.js' roadmap and prioritize features.
-You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
-https://nextjs.org/telemetry
-
    ▲ Next.js 15.3.2
 
    Creating an optimized production build ...
- ✓ Compiled successfully in 27.0s
+ ✓ Compiled successfully in 16.0s
    Linting and checking validity of types ...
 
 ./src/components/BucketExplorer.tsx
@@ -29,10 +24,10 @@ info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/d
 [Upstash Redis] The 'url' property is missing or undefined in your Redis config.
 [Upstash Redis] The 'token' property is missing or undefined in your Redis config.
    Generating static pages (0/12) ...
-   Generating static pages (3/12) 
-   Generating static pages (6/12) 
 [Upstash Redis] The 'url' property is missing or undefined in your Redis config.
 [Upstash Redis] The 'token' property is missing or undefined in your Redis config.
+   Generating static pages (3/12) 
+   Generating static pages (6/12) 
    Generating static pages (9/12) 
  ✓ Generating static pages (12/12)
    Finalizing page optimization ...
