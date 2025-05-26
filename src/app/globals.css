@@ -17,9 +17,9 @@ body {
     100% { background-position: 0% 50%; }
   }
   .animate-rainbow {
-    background: linear-gradient(270deg, #ff0000, #ffff00, #00ff00, #00ffff, #0000ff, #ff00ff, #ff0000);
+    background: linear-gradient(270deg, #ff007c, #00ffff, #8f00ff, #ff00ff, #00ff9f, #ffff00);
     background-size: 1400% 1400%;
-    animation: rainbow 8s ease infinite;
+    animation: rainbow 15s linear infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
@@ -27,8 +27,8 @@ body {
 @layer utilities {
   @keyframes blob {
     0% { transform: translate(0px, 0px) scale(1); }
-    33% { transform: translate(30px, -50px) scale(1.1); }
-    66% { transform: translate(-20px, 20px) scale(0.9); }
+    33% { transform: translate(10px, -20px) scale(1.05); }
+    66% { transform: translate(-10px, 10px) scale(0.95); }
     100% { transform: translate(0px, 0px) scale(1); }
   }
   @keyframes gradient-x {
@@ -36,12 +36,31 @@ body {
     50% { background-size: 200% 200%; background-position: right center; }
   }
   .animate-blob {
-    animation: blob 7s ease-in-out infinite;
+    animation: blob 12s ease-in-out infinite;
   }
   .animate-gradient-x {
     background-size: 200% 200%;
     animation: gradient-x 10s ease infinite;
   }
+/* Cyberpunk neon utilities */
+@layer utilities {
+  @keyframes flicker {
+    0%, 19%, 21%, 23%, 25%, 54%, 56%, 100% { opacity: 1; }
+    20%, 24%, 55% { opacity: 0.4; }
+  }
+  .animate-flicker {
+    animation: flicker 3s infinite alternate;
+  }
+  .text-neon {
+    text-shadow: 0 0 5px currentColor, 0 0 10px currentColor, 0 0 20px currentColor;
+  }
+  .neon-border {
+    box-shadow: 0 0 8px #0ff, 0 0 12px #0ff, 0 0 16px #f0f, 0 0 24px #f0f;
+  }
+  .bg-neon {
+    background-color: rgba(0, 255, 255, 0.1);
+  }
+}
 }
 
 * {
