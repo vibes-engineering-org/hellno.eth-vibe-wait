@@ -31,14 +31,16 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body>
+      <body className="min-h-screen bg-gradient-to-br from-pink-200 via-indigo-200 to-blue-200">
         <ThemeProviderClient>
           <Providers>
             <SidebarProvider>
               <SidebarInset>
-                <header className="flex h-14 shrink-0 items-center gap-2">
-                  <div className="flex flex-1 items-center gap-2 px-3">
-                    <span className="ml-2 line-clamp-1">{PROJECT_TITLE}</span>
+                <header className="flex h-16 shrink-0 items-center gap-2 px-4 bg-gradient-to-r from-purple-500 via-pink-500 to-red-500 text-white shadow-lg">
+                  <div className="flex flex-1 items-center gap-2">
+                    <span className="ml-2 line-clamp-1 text-transparent bg-clip-text animate-rainbow">
+                      {PROJECT_TITLE}
+                    </span>
                   </div>
                   <div className="ml-auto px-3 flex items-center gap-2">
                     <ThemeToggle />
