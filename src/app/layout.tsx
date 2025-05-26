@@ -31,7 +31,10 @@ export default async function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="min-h-screen bg-gradient-to-br from-pink-200 via-indigo-200 to-blue-200">
+      <body className="relative overflow-hidden min-h-screen bg-gradient-to-br from-pink-600 via-purple-600 to-blue-600 animate-gradient-x">
+        {/* Funky floating blobs */}
+        <div className="absolute top-0 left-0 w-60 h-60 bg-pink-300 opacity-30 rounded-full filter blur-3xl animate-blob"></div>
+        <div className="absolute bottom-0 right-0 w-80 h-80 bg-indigo-300 opacity-20 rounded-full filter blur-2xl animate-blob [animation-delay:2s]"></div>
         <ThemeProviderClient>
           <Providers>
             <SidebarProvider>

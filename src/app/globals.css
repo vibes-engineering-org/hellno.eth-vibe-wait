@@ -1,3 +1,5 @@
+/* Import funky retro font */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -5,7 +7,7 @@
 body {
     color: var(--foreground);
     background: var(--background);
-    font-family: "Inter", Helvetica, Arial, sans-serif;
+    font-family: 'Press Start 2P', monospace;
 }
 
 @layer utilities {
@@ -20,6 +22,25 @@ body {
     animation: rainbow 8s ease infinite;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+}
+@layer utilities {
+  @keyframes blob {
+    0% { transform: translate(0px, 0px) scale(1); }
+    33% { transform: translate(30px, -50px) scale(1.1); }
+    66% { transform: translate(-20px, 20px) scale(0.9); }
+    100% { transform: translate(0px, 0px) scale(1); }
+  }
+  @keyframes gradient-x {
+    0%, 100% { background-size: 200% 200%; background-position: left center; }
+    50% { background-size: 200% 200%; background-position: right center; }
+  }
+  .animate-blob {
+    animation: blob 7s ease-in-out infinite;
+  }
+  .animate-gradient-x {
+    background-size: 200% 200%;
+    animation: gradient-x 10s ease infinite;
   }
 }
 
