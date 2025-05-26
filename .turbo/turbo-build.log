@@ -10,7 +10,7 @@ https://nextjs.org/telemetry
    ▲ Next.js 15.3.2
 
    Creating an optimized production build ...
- ✓ Compiled successfully in 45s
+ ✓ Compiled successfully in 27.0s
    Linting and checking validity of types ...
 
 ./src/components/BucketExplorer.tsx
@@ -29,10 +29,10 @@ info  - Need to disable some ESLint rules? Learn more here: https://nextjs.org/d
 [Upstash Redis] The 'url' property is missing or undefined in your Redis config.
 [Upstash Redis] The 'token' property is missing or undefined in your Redis config.
    Generating static pages (0/12) ...
-[Upstash Redis] The 'url' property is missing or undefined in your Redis config.
-[Upstash Redis] The 'token' property is missing or undefined in your Redis config.
    Generating static pages (3/12) 
    Generating static pages (6/12) 
+[Upstash Redis] The 'url' property is missing or undefined in your Redis config.
+[Upstash Redis] The 'token' property is missing or undefined in your Redis config.
    Generating static pages (9/12) 
  ✓ Generating static pages (12/12)
    Finalizing page optimization ...
